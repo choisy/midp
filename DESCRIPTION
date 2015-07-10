@@ -1,0 +1,10 @@
+Package: midp
+Type: Package
+Title: Modeling Infectious Diseases Parameters Based On Serological And Social Contact Data
+Version: 0.1
+Date: 2015-07-10
+Author: person("Marc","Choisy",email="mchoisy@gmail.com",role=c("aut","cre"))
+Maintainer: Marc Choisy <mchoisy@gmail.com>
+Description: based on the book "Modeling infectious diseases parameters based on serological and social contact data" by Niel Hens, Ziv Shkedy, Marc Aerts, Christel Faes, Pierre Van Damme and Philippe Beutels (Springer, 2012).
+License: GPL-3
+LazyData: TRUE
