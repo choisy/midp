@@ -1,0 +1,39 @@
+---
+title: "Modeling infectious diseases parameters based on serological and social
+contact data"
+csl: the-american-naturalist.csl
+output:
+  html_document:
+    theme: cerulean
+    toc: yes 
+  pdf_document:
+    toc: yes
+<!--bibliography: references.bib-->
+---
+
+<!--
+For references:
+Put all the bibTeX references in the file "references.bib" in the current folder
+and cite the references as @key or [@key] in the text. Put a "References" title
+wherever you want to display the reference list.
+-->
+
+```{r include=F}
+knitr::knit_hooks$set(margin = function(before,options,envir) {
+  if(before) par(mgp=c(1.5,0.5,0),bty="n",plt=c(.105,.97,.13,.97))
+  else NULL
+})
+
+knitr::opts_chunk$set(margin=T,prompt=T,comment="",collapse=T,cache=F,
+                      dev.args=list(pointsize=11),fig.height=3.5,
+                      fig.width=4.24725,fig.retina=2,fig.align="center")
+```
+
+General constants:
+
+```{r}
+orange <- rgb(222,141,  8,max=255)
+blue   <- rgb( 72,165,226,max=255)
+green  <- rgb( 95,124,  3,max=255)
+```
+
